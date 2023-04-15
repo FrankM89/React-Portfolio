@@ -18,12 +18,12 @@ function Portfolio() {
     },
     {
       name: "jate",
-      description: "JS/HTML/CSS",
+      description: "JS/HTML/CSS/Node",
       link: "https://no-internet-no-problem.herokuapp.com/",
       repo: "https://github.com/FrankM89/No-Internet-No-Problem",
     },
     {
-      name: "weather-dashboard",
+      name: "5-day-forecast",
       description: "JS/HTML/CSS",
       link: "https://frankm89.github.io/5-Day-Forecast-Dashboard/",
       repo: "https://github.com/FrankM89/5-Day-Forecast-Dashboard",
