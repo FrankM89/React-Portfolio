@@ -5,7 +5,7 @@ function Footer() {
     {
       name: "fab fa-github",
       label: "GitHub",
-      link: "https://github.com/your-username",
+      link: "https://github.com/FrankM89",
     },
     {
       name: "fab fa-linkedin",
