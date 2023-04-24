@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/React-Portfolio/static/css/main.1baec6ca.css",
+    "main.js": "/React-Portfolio/static/js/main.d44dbf46.js",
+    "static/media/me.jpg": "/React-Portfolio/static/media/me.30236d217c07e5e7012e.jpg",
+    "static/media/what2game.png": "/React-Portfolio/static/media/what2game.4c09efc4b81fe06769f9.png",
+    "static/media/soyouwanttomanageaproject.jpg": "/React-Portfolio/static/media/soyouwanttomanageaproject.4c47d3d9ba26a4ea1969.jpg",
+    "static/media/notetaker.png": "/React-Portfolio/static/media/notetaker.b8c1a41365702d47224b.png",
+    "static/media/jate.png": "/React-Portfolio/static/media/jate.f8b06604614b342ff1d6.png",
+    "static/media/cover-image.jpg": "/React-Portfolio/static/media/cover-image.3e006ee0d59f87e85ee0.jpg",
+    "index.html": "/React-Portfolio/index.html",
+    "main.1baec6ca.css.map": "/React-Portfolio/static/css/main.1baec6ca.css.map",
+    "main.d44dbf46.js.map": "/React-Portfolio/static/js/main.d44dbf46.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1baec6ca.css",
+    "static/js/main.d44dbf46.js"
+  ]
+}
