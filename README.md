@@ -18,7 +18,7 @@
   React Single Page Portfolio built with React
   
   ## Installation:
-  npm install
+  ``npm install``
   
   ## Usage:
   View my portfolio
