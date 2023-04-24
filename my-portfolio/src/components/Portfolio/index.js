@@ -18,7 +18,7 @@ function Portfolio() {
       repo: "https://github.com/erickjavalos/what2game",
     },
     {
-      name: "So You Want To Manage a Project?",
+      name: "Project Managment App",
       description:
         "App designed to help organizations keep track of their current projects.",
       image: soyouwanttomanageaproject,
@@ -26,14 +26,14 @@ function Portfolio() {
       repo: "https://github.com/wiilki/so-you-want-to-manage-a-project",
     },
     {
-      name: "Virtual Assistant That Only Takes Notes",
+      name: "Note Taker",
       description: "Keep track of your notes with one simple app!",
       image: notetaker,
       link: "https://fm-note-taker.herokuapp.com/",
       repo: "https://github.com/FrankM89/Virtual-Assistant-That-Only-Takes-Notes",
     },
     {
-      name: "No Internet No Problem",
+      name: "JATE",
       description: "No internet? No problem! Work with or without internet!",
       image: jate,
       link: "https://no-internet-no-problem.herokuapp.com/",
