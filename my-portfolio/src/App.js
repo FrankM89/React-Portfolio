@@ -1,42 +1,36 @@
 import React, { useState } from "react";
-import Header from "./component/Header";
-import About from "./component/About";
-import Resume from "./component/Resume";
-import Projects from "./component/Projects";
-import Contact from "./component/Contact";
+import Header from "./components/Header";
+import Nav from "./components/Nav";
+import Page from "./components/Page";
+import Footer from "./components/Footer";
 
 function App() {
-  const [currentPage, setCurrentPage] = useState("header");
-
-  const renderPage = () => {
-    switch (currentPage) {
-      case "header":
-        return <Header />;
-      case "about":
-        return <About />;
-      case "resume":
-        return <Resume />;
-      case "projects":
-        return <Projects />;
-      case "contact":
-        return <Contact />;
-      default:
-        return <Header />;
+  const [pages] = useState([
+    {
+      name: "about me"
+    },
+    { name: "portfolio" },
+    { name: "contact" },
+    {
+      name: "resume"
     }
-  };
+  ]);
+
+  const [currentPage, setCurrentPage] = useState(pages[0]);
 
   return (
-    <div className="font-sans">
-      {renderPage()}
-      <nav>
-        <ul>
-          <li onClick={() => setCurrentPage("header")}>Header</li>
-          <li onClick={() => setCurrentPage("about")}>About</li>
-          <li onClick={() => setCurrentPage("resume")}>Resume</li>
-          <li onClick={() => setCurrentPage("projects")}>Projects</li>
-          <li onClick={() => setCurrentPage("contact")}>Contact</li>
-        </ul>
-      </nav>
+    <div>
+      <Header>
+        <Nav
+          pages={pages}
+          setCurrentPage={setCurrentPage}
+          currentPage={currentPage}
+        ></Nav>
+      </Header>
+      <main>
+        <Page currentPage={currentPage}></Page>
+      </main>
+      <Footer />
     </div>
   );
 }

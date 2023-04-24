@@ -1,3 +1,360 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+/* Set default styles for the page */
+:root {
+  --primary: #2b4af8; /* define a custom CSS variable for primary color */
+  --secondary: #001aff; /* define a custom CSS variable for secondary color */
+  --background: #080150; /* define a custom CSS variable for background color */
+  --text: #000000; /* define a custom CSS variable for text color */
+  --darkoutline: #265b26; /* define a custom CSS variable for darkoutline color */
+  --shadow: #2a2b2a; /* define a custom CSS variable for shadow color */
+  --spacing-one: calc(1rem); /* define a custom CSS variable for spacing */
+  --spacing-two: calc(1.5rem); /* define a custom CSS variable for spacing */
+  --spacing-five: calc(2rem); /* define a custom CSS variable for spacing */
+}
+
+/* Apply box-sizing to all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Set default styles for the body */
+html, body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  line-height: .5;
+  font-size: 30px;
+  background: var(--background); /* use the custom CSS variable for the background color */
+  color: rgb(11, 168, 207); /* use the custom CSS variable for the text color */
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Set styles for headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  margin: 14px 20px;
+  line-height: 1;
+}
+
+/* Set styles for specific headings */
+h1 {
+  font-size: 8.5rem;
+  color: var(--primary);
+  margin: 20px 15px;
+}
+/* Component title */
+h2 {
+  font-size: 3rem;
+  color: var(--primary);
+  display: inline-block;
+  background-color: black;
+  padding: 0.2em 0.5em; /* Add some padding to create space around the text */
+}
+
+/* titles for projects */
+h3 {
+  font-size: 2.5rem;
+  color: rgb(11, 168, 207);
+  display: inline-block;
+  background-color: none;
+  padding: 0.3em 0.9em; /* Add some padding to create space around the text */
+}
+
+h4{
+  font-size: 2.5rem;
+}
+
+
+/* Set styles for paragraphs */
+p {
+  font-size: 2rem;
+  margin: 30px;
+  line-height: 2.5rem;
+  color: rgb(11, 168, 207);
+  display: inline-block;
+  background-color: none;
+}
+
+/* Set styles for links */
+a {
+  color: rgb(11, 168, 207);
+  text-decoration: none;
+  opacity: 1;
+  background-color: none; /* Set the default background color of the link */
+}
+
+a:hover {
+  opacity: 1;
+  transition: all .2s ease-in-out;
+  background-color: rgb(44, 53, 187); /* Set the background color of the link on hover */
+}
+
+/* Set styles for buttons */
+button {
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 3rem;
+  border: solid black;
+  outline: none;
+  cursor: pointer;
+  margin: 40px 341px;
+  background-color: rgb(11, 168, 207);
+  padding: 20px 25px;
+  opacity: .7;
+}
+/* Set styles for images */
+img {
+  max-width: 100%;
+}
+
+/* Set styles for forms */
+form {
+  margin: 25px;
+  width: 30%;
+}
+
+input {
+  margin: 30px 220px;
+  font-size: 1.3rem;
+  padding: 0.5rem;
+  width: 400px;
+  border: 6px solid var(--shadow);
+  outline: none;
+  border-radius: 2px;
+  transition: box-shadow 1s;
+}
+
+label {
+  margin: 217px;
+}
+/* bullet point for nav */
+li {
+  list-style:square;
+}
+
+/* Set styles for header section */
+.header {
+  position: sticky;
+  width: 100%;
+  height: 100%;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.header-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+/* Set styles for navigation */
+nav {
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  font-size: 3.1rem;
+  margin: 30px 46px;
+}
+
+nav a:hover {
+  text-decoration: none;
+}
+
+nav li {
+  cursor: pointer;
+  text-shadow: 6px 1px 10px rgb(11, 168, 207);
+  margin: 0 50px;
+}
+
+/* Set styles for unordered lists */
+ul.skills {
+  line-height: 3rem;
+}
+
+ul.skills li {
+  list-style-type: square;
+}
+
+/* Set styles for footer section */
+footer {
+  font-size: 48px;
+  justify-content: center;
+}
+
+footer a {
+  color: var(--text);
+  opacity: .5;
+  margin: 10px 20px;
+  transition: all .3s ease-in-out;
+}
+
+footer a:hover {
+  opacity: 1;
+}
+
+textarea {
+  width: 600px;
+  height: 200px;
+  border: 6px solid black;
+  padding: 80px;
+  margin-left: 220px;
+  margin-top: 30px;
+}
+
+/* Set styles for containers */
+.container {
+  width: 85%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Set styles for flexbox */
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+/* Nav bar */
+.px-1 {
+  padding-right: var(--spacing-one);
+  padding-left: var(--spacing-one);
+}
+
+
+/* Set width and text alignment for class .card */
+.card {
+  width: 25%;
+  text-align: center;
+}
+
+/* Set position, width, height, and margin for class .project */
+.project {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+  margin: 30px;
+}
+.project-image {
+  width: 100%;
+  height: auto;
+  margin-left: 40px;
+  margin-top: 1px;
+}
+
+
+/* Set position and dimensions for class .project-bg */
+.project-bg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Set text color, position, padding, and transition properties for class .project-text */
+.project-text {
+  color: var(--text);
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  padding: 50px;
+  z-index: 900;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+
+/* Set background color, opacity, and border properties on hover for class .project-text */
+.project-text:hover {
+  background-color: var(--alpha);
+  opacity: 1;
+  border: 10px solid var(--secondary);
+}
+
+/* Set font size for heading elements inside class .project-text */
+.project-text h3 {
+  font-size: 2.5rem;
+}
+
+/* Set text decoration, font weight, and transition properties for links inside class .project-text */
+.project-text a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+/* Set link color on hover for links inside class .project-text */
+.project-text a:hover {
+  color: rgb(255, 255, 255);
+}
+
+/* Set text color, cursor, and text shadow properties for class .navActive */
+.navActive {
+  color: var(--secondary);
+  cursor: default;
+  text-shadow: 55px 55px darkblue;
+}
+
+/* Media query for adjusting layout at screen sizes up to 1300px */
+@media only screen and (max-width: 1300px) {
+  /* Set position, display, z-index, margin, and font size for nav element */
+  nav {
+    position: static;
+    display: block;
+    z-index: 100;
+    margin: 0 10px;
+    font-size: 2rem;
+  }
+  /* Set display and height properties for heading element inside header element */
+  header h1 {
+    display: block;
+    height: 30px;
+  }
+}
+
+/* Media query for adjusting layout at screen sizes up to 900px */
+@media only screen and (max-width: 900px) {
+  /* Set position, display, z-index, margin, and font size for nav element */
+  nav {
+    position: static;
+    display: block;
+    z-index: 100;
+    margin: 0 10px;
+    font-size: 1.3rem;
+  }
+  /* Set display, margin, height, width, text alignment, and font size properties for heading element inside*/
+
+  header h1 {
+    display: block;
+    margin: 5px 10px;
+    height: 15px;
+    width: 100%;
+    text-align: center;
+    font-size: 2.3rem;
+  }
+}
