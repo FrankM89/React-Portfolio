@@ -15,7 +15,7 @@
 
   ## Description:
   
-  React Single Page Portfolio
+  React Single Page Portfolio built with React
   
   ## Installation:
   npm install
